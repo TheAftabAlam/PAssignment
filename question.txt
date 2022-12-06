@@ -1,0 +1,8 @@
+what are the key things you would consider when creating/consuming an API to ensure that it is secure and reliable?
+To secure and reliable our api----
+1. Implement authentication.
+2. Implement authorization.
+3. Validate all requests.
+4. Encrypt all requests and responses.
+5. Only include necessary information in responses.
+6. Conduct security tests.
