@@ -17,7 +17,7 @@ public interface ProductDao extends JpaRepository<Product, Integer>{
 	@Query(value="select * from Product where title like %:keyword% or description like %:keyword% or auth like %:keyword%",nativeQuery = true)
 	public List<Product> getProduct(@Param("keyword") String keyword);
 	
-	@Query("select Disntinct(category) From Product")
+	@Query("select Distinct(category) From Product")
 	public List<String> getAllCategories();
 	
 	
