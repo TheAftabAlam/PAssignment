@@ -49,12 +49,7 @@ public class ProductServiceImpl implements ProductService{
 		return categories;
 	}
 
-	@Override
-	public List<String> getHealth() {
-	List<String> list=productDao.getAllhealth();
-		return list;
-	}
-
+	
 	
 
 	

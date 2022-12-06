@@ -65,11 +65,6 @@ public class ProductController {
 		return new ResponseEntity<>(categories,HttpStatus.OK);
 	}
 	
-	@GetMapping("GET/health")
-	public ResponseEntity<List<String>> getHealth() 
-	{
-		List<String> health= productService.getHealth();
-		return new ResponseEntity<>(health,HttpStatus.OK);
-	}
+
 
 }

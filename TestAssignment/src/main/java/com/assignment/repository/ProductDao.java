@@ -14,14 +14,13 @@ import com.assignment.model.Product;
 public interface ProductDao extends JpaRepository<Product, Integer>{
 	
 	
-	@Query("select * from Product where title like %:keyword% or description like %:keyword% or auth like %:keyword%")
+	@Query(value="select * from Product where title like %:keyword% or description like %:keyword% or auth like %:keyword%",nativeQuery = true)
 	public List<Product> getProduct(@Param("keyword") String keyword);
 	
 	@Query("select Disntinct(category) From Product")
 	public List<String> getAllCategories();
 	
-	@Query("select health From Product")
-	public List<String> getAllhealth();
+	
 	
 
 }

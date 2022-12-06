@@ -12,6 +12,6 @@ public interface ProductService {
 	
 	public List<Product> getSingleEntry(String keyword) throws Exception ;
 	public List<String> getAllCategories();
-	public List<String> getHealth();
+	
 	
 }
